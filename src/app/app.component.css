@@ -1,0 +1,75 @@
+.bar{
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+  height: 35px;
+  background-color: #f8f9ff;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+.logo{
+  margin-left: 10px;
+  width: 100%;
+  max-width: 100px;
+}
+
+.logo img{
+  max-width: 76px;
+  width: 100%;
+}
+.notis{
+  position: relative;
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+  margin-right: 10px;
+  background-color: aliceblue;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notis img{
+  max-width: 16px;
+}
+.notis img:hover{
+  cursor: pointer;
+}
+
+.notis .lista{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  display: none;
+  padding: 2px;
+  margin: 10px 0;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  width: 180px;
+}
+
+.notis:hover .lista, .notis:hover .lista:hover{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.notis .lista li{
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  border-bottom: 1px solid rgba(0,0,0,.3);
+  background-color: aliceblue;
+}
+
+.notis .lista li.read{
+  background-color: white;
+}
+
+.notis .lista li:hover{
+  cursor: pointer;
+  background-color: #e6eef5;
+}
